@@ -1,0 +1,7 @@
+<launch>
+  <!-- Memuat turtlebot3_robot.launch -->
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch" />
+
+  <!-- Memuat usb_camera_publish.launch -->
+  <include file="usb_camera_publish.launch" />
+</launch>
