@@ -7,8 +7,19 @@ Turtlebot3 Traffic Light Detection is a system developed for the Turtlebot3 robo
 If at the time of launching the turtlebot autorace error then you can use the node that I have created, [usb_camera_publish.launch](https://github.com/R-Mchi/TurtleBot3-Traffic-Light/blob/main/usb_camera_publish.launch) dan [turtlebot3_with_camera.launch](https://github.com/R-Mchi/TurtleBot3-Traffic-Light/blob/main/turtlebot3_with_camera.launch) put both launch files in
 
 >cd catkin_ws/src
+
 2. After that, make sure you have Python installed on your laptop/computer. Python is used as a programming language to control robots, you can see the full code here
 >[Obstacle and Traffic](https://github.com/R-Mchi/TurtleBot3-Traffic-Light/edit/main/obstacle_and_traffic.py)
+
+## How to Run Robots
+1. Connect the robot with the computer using ssh
+2. Open new terminal on laptop/computer, Run roscore on your terminal laptop/computer
+   > roscore
+3. Back to Robot terminal, Run launch file on robot terminal
+   > roslaunch turtlebot3_with_camera.launch
+4. Open new terminal again and run code for control robot
+   > python obstacle_and_traffic.py
+
 ## Methodology
 The system uses the OpenCV library for computer vision processing, where the captured images are converted to the HSV color space to enhance color detection. Specific color ranges are defined for each traffic light signal, such as red, yellow, and green, and masks are created to isolate these colors in the image.
 Once the colors are detected, the system determines the current traffic light signal based on the predominant color in the image. If a red signal is detected, the robot stops its movement. If a yellow signal is detected, the robot moves at a slow speed. And if a green signal is detected, the robot moves at a regular speed.
