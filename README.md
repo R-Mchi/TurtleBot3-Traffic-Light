@@ -3,6 +3,7 @@ Turtlebot3 Traffic Light Detection is a system developed for the Turtlebot3 robo
 ## Setting Up
 1. first, keep in mind that TurtleBot3 must be fully installed. You can follow the steps from this link
 >https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/.
+If at the time of launching the turtlebot autorace error then you can use the node that I have created, []()
 2. After that, make sure you have Python installed on your laptop/computer. Python is used as a programming language to control robots, you can see the full code here
 >[Obstacle and Traffic](https://github.com/R-Mchi/TurtleBot3-Traffic-Light/edit/main/obstacle_and_traffic.py)
 ## Methodology
